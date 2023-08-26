@@ -21,6 +21,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #fafafa;
     color: black;
+    text-align: center;
 }
 
 ul {
@@ -47,6 +48,9 @@ section {
     place-items: center;
     align-content: center;
     min-height: 100vh;
+}
+div {
+    text-align: center;
 }
 
 
