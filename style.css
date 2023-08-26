@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+html {
+    font-size: 16px;
+}
+@media only screen and (min-width: 720px) {
+    html {
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 960px) {
+    html {
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 1240px) {
+    html {
+        font-size: 24px;
+    }
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+hr {
+    color: black;
+    width: 10rem;
+}
+h1 {
+    margin: 0;
+}
+h3 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+p.banner {
+    font-size: 2rem;
+}
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+
+a:link, a:visited, button {
+    color: black;
+    border-color: black;
+    text-decoration: underline;
+    transition: 0.32s;
+    cursor: pointer;
+}
+button {
+    border: solid 1px;
+    border-radius: 0.5rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    font-size: 0.7rem;
+    background-color: white;
+}
+a:link:hover, a:visited:hover, button:hover {
+    color: gray;
+}
+
+.buttons {
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: space-evenly;
+}
+.buttons li {
+    margin: 0.5rem .1rem 0 .1rem;
+}
+.buttons li a {
+    margin-top: .2rem;
+	border-radius: 100%;
+	width: 1.6rem;
+	height: 1.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.hidden {
+    opacity: 0;
+    transition: all 3s;
+}
+.show {
+    opacity: 1;
+}
+
+.hidden .buttons {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show .buttons {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+    .hidden .buttons {
+        transition: none;
+    }
+}
+
+p.wip {
+    font-size: 0.8rem;
+    width: 100%;
+    bottom: 0;
+    background-color: #fafafa;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+}
