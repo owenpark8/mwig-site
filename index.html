@@ -4,18 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michigan Women Investment Group</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-
+    <link rel="icon" type="image/png" href="/assets/images/logo.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="app.js"></script>
 </head>
 <body>
-    <section class="hidden">
-        <div>
-            <p class="banner">Michigan Women Investment Group</p>
-            <p>Please excuse our appearance. This site is currently under contruction.</p>
-            <p>Contact <a href = "mailto: mwig.eboard@umich.edu">mwig.eboard@umich.edu</a> for more information.</p>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="https://michiganwig.com"><img src="assets/images/logo-removebg.png" alt="logo"></a>
+            </div>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#landing" class="scroll">Home</a></li>
+                    <li><a href="#about" class="scroll">About</a></li>
+                    <li><a href="#board" class="scroll">Board</a></li>
+                    <li><a href="#contact" class="scroll"> Contact</a></li>
+                    <li><a href="https://forms.gle/iEsDgoSp7AQaNjPQ7" target="_blank">Apply</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+
+    <section id="landing" class="hidden">
+        <div class="banner">
+            <h1>MICHIGAN WOMEN INVESTMENT GROUP</h1>
+        </div>
+        <div class="info">
+            <div class="apply">
+                <a href="https://forms.gle/iEsDgoSp7AQaNjPQ7" target="_blank" class="button-link">APPLY HERE</a>
+                <p>Our application is due Sunday, 9/17, at 11:59pm ET.<br>Please reach out to mwig.eboard@umich.edu with any questions.</p>
+            </div>
+            <div class="interest">
+                <a href="https://forms.gle/UyW47vkeZ1EyQJoq7" target="_blank" class="button-link">INTEREST FORM</a>
+                <p>Fill out our interest form to stay updated on our upcoming recruitment events!</p>
+            </div>
         </div>
     </section>
+    
+
+    <section id="about" class="hidden">
+        <hr>
+        <h2>WHO WE ARE</h2>
+        <p>Our mission is to empower undergraduate women by providing a supportive community where we collectively strive to become knowledgeable and proficient in the realm of finance. We are dedicated to fostering an inclusive environment that promotes financial literacy, investment education, and professional growth. By leveraging our diverse backgrounds and perspectives, we aim to equip our members with the tools, skills, and confidence to navigate the complex world of finance successfully. Through interactive discussions, workshops, guest speakers, and hands-on investment opportunities, we endeavor to cultivate a strong foundation of financial understanding and strategic thinking. Our ultimate goal is to empower each member to secure their economic futures and become leaders in the field of finance. Together, we aspire to shatter barriers, challenge stereotypes, and create a lasting impact in the world of finance as confident and well-versed women.</p>
+        <hr>
+    </section>
+    <section id="network" class="hidden">
+        <h2>OUR NETWORK</h2>
+        <div class="logos">
+            <div class="logos-slide-1">
+                <img src="./assets/images/companies/ares.webp" />
+                <img src="./assets/images/companies/barclays.webp" />
+                <img src="./assets/images/companies/blackstone.webp" />
+                <img src="./assets/images/companies/bofa.webp" />
+                <img src="./assets/images/companies/citi.webp" />
+                <img src="./assets/images/companies/deutsche.webp" />
+                <img src="./assets/images/companies/evercore.webp" class="smaller" />
+                <img src="./assets/images/companies/goldmansachs.webp" />
+                <img src="./assets/images/companies/guggenheim.webp" />
+            </div>
+            <div class="logos-slide-1">
+                <img src="./assets/images/companies/ares.webp" />
+                <img src="./assets/images/companies/barclays.webp" />
+                <img src="./assets/images/companies/blackstone.webp" />
+                <img src="./assets/images/companies/bofa.webp" />
+                <img src="./assets/images/companies/citi.webp" />
+                <img src="./assets/images/companies/deutsche.webp" />
+                <img src="./assets/images/companies/evercore.webp" class="smaller" />
+                <img src="./assets/images/companies/goldmansachs.webp" />
+                <img src="./assets/images/companies/guggenheim.webp" />
+            </div>
+        </div>
+        <div class="logos">
+            <div class="logos-slide-2">
+                <img src="./assets/images/companies/jefferies.webp" class="smaller"/>
+                <img src="./assets/images/companies/jpmorgan.webp" class="centered"/>
+                <img src="./assets/images/companies/lazard.webp" class="smaller"/>
+                <img src="./assets/images/companies/morganstanley.webp" />
+                <img src="./assets/images/companies/oaktree.webp" />
+                <img src="./assets/images/companies/rbc.webp" />
+                <img src="./assets/images/companies/rothschild.webp" />
+                <img src="./assets/images/companies/ubs.webp" />
+            </div>
+            <div class="logos-slide-2">
+                <img src="./assets/images/companies/jefferies.webp" class="smaller" />
+                <img src="./assets/images/companies/jpmorgan.webp" class="centered" />
+                <img src="./assets/images/companies/lazard.webp" class="smaller"/>
+                <img src="./assets/images/companies/morganstanley.webp" />
+                <img src="./assets/images/companies/oaktree.webp" />
+                <img src="./assets/images/companies/rbc.webp" />
+                <img src="./assets/images/companies/rothschild.webp" />
+                <img src="./assets/images/companies/ubs.webp" />
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <section id="board" class="hidden">
+        <h2>MEET THE BOARD</h2>
+        <div class="board-members">
+            <div class="member">
+                <img src="./assets/images/headshots/sophie.jpg" alt="Sophie Park Board Photo">
+                <p class="name">Sophie Park</p>
+                <p class="position">Founder & President</p>
+                <p class="info">Ross School of Business</p>
+                <p class="info">Senior</p>
+            </div>
+            <div class="member">
+                <img src="./assets/images/headshots/mansi.jpg" alt="Mansi Gupta Board Photo">
+                <p class="name">Mansi Gupta</p>
+                <p class="position">VP of Professional Development</p>
+                <p class="info">Ross School of Business</p>
+                <p class="info">Junior</p>
+            </div>
+            <div class="member">
+                <img src="./assets/images/headshots/katelyn.jpg" alt="Katelyn Hatem Board Photo">
+                <p class="name">Katelyn Hatem</p>
+                <p class="position">VP of Marketing</p>
+                <p class="info">College of LSA</p>
+                <p class="info">Senior</p>
+            </div>
+            <div class="member">
+                <img src="./assets/images/headshots/abby.jpg" alt="Abby Knebelkamp Board Photo">
+                <p class="name">Abby Knebelkamp</p>
+                <p class="position">VP of External Relations</p>
+                <p class="info">Ross School of Business</p>
+                <p class="info">Junior</p>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+
+    <section id="contact" class="hidden">
+        <h2>CONTACT US</h2>
+        <div class="contact-info">
+            <a href="https://www.instagram.com/michiganwig/" target="_blank">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </svg>
+                <span>@michiganwig</span>
+            </a>
+            <a href="mailto:mwig.eboard@umich.edu" target="_blank">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg>
+                </svg>
+                <span>mwig.eboard@umich.edu</span>
+            </a>
+            <a href="https://www.linkedin.com/company/michiganwig/" target="_blank">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                </svg>
+                <span>Visit us on LinkedIn</span>
+            </a>
+        </div>     
+        <hr>
+    </section>
+
+
+    <script>
+        // SMOOTH SCROLLING 
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('nav a.scroll');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    hideMenu();
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+
+        // NAVBAR TOGGLE
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "100%";
+        }
+
+    </script>
 </body>
 </html>
