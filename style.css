@@ -42,16 +42,22 @@ body {
 }
 h1 {
     font-family: LogoFont;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 2.4rem;
     margin: 0.7rem 0.7rem 0 0.7rem;
 
 }
 h2 {
     font-family: LogoFont;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 2rem;
     margin-bottom: 0.5rem;
+}
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 88;
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
 }
 section {
     text-align: center;
@@ -149,22 +155,21 @@ nav .fa{
 section#landing {
     min-height: 70vh;
 }
-#landing div.banner,div.apply{
+#landing div.banner {
     text-align: center;
 }
 #landing div.banner {
     margin-bottom: 2rem;
 }
-div.info {
+#recruitment-links {
     font-weight: 100;
     display: grid;
-    margin-bottom: 8rem;
 }
-div.apply, div.interest {
+div.r-link {
     text-align: center;
     padding: 0 3.4rem 0 3.4rem;
 }
-div.apply p, div.interest p {
+div.r-link p {
     margin-top: 0.4rem;
 }
 a.button-link {
@@ -185,11 +190,33 @@ a.button-link:hover {
     background-color: #f0f0f0;
     transition: 0.7s;
 }
+#recruitment-timeline {
+    display: inline-block;
+    text-align: center;
+    max-width: 25rem;
+    margin: 0 1rem;
+}
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1rem;
+}
+.event-name {
+    text-align: left;
+    vertical-align: top;
+}
+.event-info {
+    text-align: right;
+}
 
 /*====================== ABOUT AND NETWORK ==========================*/
 
 #about{
-    margin: 0 2rem;
+    margin: 0 1.5rem;
+}
+#about p {
+    display: inline-block;
+    max-width: 60rem;
 }
 #network {
     margin: 0;
